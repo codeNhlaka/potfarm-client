@@ -1,0 +1,241 @@
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav {
+  background: white;
+  width: 60%;
+  height: 10%;
+  position: absolute;
+}
+
+.brand {
+  width: 200px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.product-image {
+  position: absolute;
+  left: 60%;
+  width: 40%;
+  background: white;
+  height: 100%;
+  background: url(../assets/images/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-section {
+  position: absolute;
+  width: 60%;
+  height: 90%;
+  top: 10%;
+  overflow: hidden;
+}
+
+.form-section * {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  top: 30%;
+}
+
+.form-section .header h1 {
+  width: 100%;
+  font-size: 75px;
+  font-weight: 400;
+  padding-left: 10%;
+  padding-right: 5%;
+  cursor: default;
+}
+
+.details {
+  position: relative;
+  width: 100%;
+  top: 30%;
+}
+
+.form-section .details p {
+  font-size: 14px;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-top: 20px;
+  width: 400px;
+  line-height: 25px;
+  position: relative;
+  cursor: default;
+}
+
+.notify {
+  position: relative;
+  width: 100%;
+  top: 30%;
+}
+
+.form-section .notify p {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 10%;
+  padding-right: 5%;
+  margin-top: 20px;
+  width: 400px;
+  line-height: 25px;
+  position: relative;
+  cursor: default;
+}
+
+.input-container {
+  position: relative;
+  top: 30%;
+  left: 10%;
+  margin-top: 50px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid lightgray;
+  display: flex;
+  flex-direction: columns;
+}
+
+.input-container input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-indent: 5%;
+  outline: none;
+}
+
+.input-container button {
+  width: 20%;
+  height: 100%;
+  border: none;
+  margin: none;
+  background: black;
+  cursor: pointer;
+  transition: 400ms linear;
+}
+
+.input-container button:hover {
+  transition: 400ms linear;
+  background: #161515;
+}
+
+.animate {
+  animation: loading 1000ms linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90def);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    position: relative;
+    width: 100%;
+    top: 0;
+  }
+
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .form-section {
+    position: relative;
+    width: 100%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+  }
+
+  .header {
+    top: 11%;
+  }
+
+  .details {
+    top: 13%;
+    margin-top: 10px;
+  }
+
+  .notify {
+    top: 15%;
+    margin-top: 10px;
+  }
+
+  .form-section .header h1 {
+    padding: 0;
+    text-align: center;
+  }
+
+  .form-section .details p {
+    width: 90%;
+    padding: 0;
+    text-align: center;
+    left: 5%;
+    margin-top: 5px;
+  }
+
+  .form-section .notify p {
+    width: 90%;
+    text-align: center;
+    padding: 0;
+    left: 5%;
+    margin-top: 5px;
+  }
+
+  .input-container {
+    top: 17%;
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-section .header h1 {
+    font-size: 46px;
+    top: 5%;
+  }
+
+  .product-image {
+    height: 200px;
+  }
+
+  .brand {
+    display: block;
+    position: relative;
+    padding-top: 15px;
+    left: 25px;
+    font-size: 14px;
+  }
+}
