@@ -50,7 +50,7 @@ function Form({ notify }){
 
             setIsSubmiting(true);
 
-            axios.post("http://localhost:4040/subscribe-email", {email}).then((response) => {
+            axios.post("https://potfarm-server.herokuapp.com/subscribe-email", {email}).then((response) => {
                 const { subscribed } = response.data;
                 
                 setIsSubmiting(false);
